@@ -1,0 +1,12 @@
+.logo{
+    height: 10rem;
+    width: 10rem;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+body{
+    background-image:url("https://st2.depositphotos.com/3283585/5383/v/450/depositphotos_53839577-stock-illustration-vector-pattern-with-hand-drawn.jpg");
+}
