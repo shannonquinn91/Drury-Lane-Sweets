@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -12,49 +10,58 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
-    
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/javascript<ntic.min.js"></script> -->
-    <!-- <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script> -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drury Lane Sweets</title>
 </head>
 <body>
-    <div class = "container-fluid">
-      <div class = "row">
-        <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg"> 
-        <div class="ui stackable container menu">
-          <div class="item" href="index.html">
-            Home
-          </div>
-          <a class="item active" href="Menu.html">
-            Menu
-          </a>
-          <a class="item">
-            Catering
-          </a>
-          <a class="item">
-            About Us
-          </a>
-          <a class="item">
-              Contact Us
-          </a>
-          <div class = orderBtn>
-            <button class ="order-online ui green button" type="button">
-                Order Online
-            </button>
-          </div>
-          <div class = "right menu">
-            <a class="item">
-              <i class="fas fa-shopping-cart fa-2x"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!--Navbar-->
+<nav class="navbar navbar-light yellow lighten-4 mb-4">
+  
+  <!-- Navbar brand -->
+  <h1 class="navbar-brand" href="#">Drury Lane Sweets</h1>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
+    aria-label="Toggle navigation"><span class="white-text"><i class="fas fa-bars fa-1x"></i></span></button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent41">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Catering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Order Online</a>
+      </li>
+      <li class="nav-item">
+        <button  class="btn btn-outline-default btn-rounded waves-effect"><i class="fas fa-shopping-cart"></i></button>
+        </li>
+    </ul>
+    <!-- Links -->
+
   </div>
+  <!-- Collapsible content -->
+
+</nav>
+<img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg">
+
   <div class="Page-links">
   <a href="#cakes">Cakes | </a>
   <a href="#cupcakes">Cupcakes | </a>
@@ -67,8 +74,11 @@
       <br>
       <img id= "cakes" class="menuimage" src="assets/images/cake.jpg">
       <br>
+      
       <div class="content">
         <a class="headermenu">Cakes ... $25</a>
+        <br>
+        <button type="button" class="btn btn-outline-default waves-effect NutritionBtn" data-type= "cakes"><i class="fas fa-star pr-2" aria-hidden="true"></i>Nutrition</button>
         <div class="description"><span class= "bakedgoodheader">Chocolate ~ </span><span class = "info">Rich milk chocolate cake with chocolate frosting swirl</span></div>
         <div class="description"><span class= "bakedgoodheader">Vanilla ~ </span><span class = "info">Vanilla cake with chocolate or vanilla frosting</span></div>
         <div class="description"><span class= "bakedgoodheader">Coffee ~ </span><span class = "info">Espresso-infused chocolate cake with coffee flavored frosting</span></div>
@@ -81,6 +91,8 @@
       <br>
       <div class="content">
         <a class="headermenu">Cupcakes ... $5</a>
+        <br>
+        <button type="button" class="btn btn-outline-default waves-effect NutritionBtn" data-type= "cupcakes"><i class="fas fa-star pr-2" aria-hidden="true"></i>Nutrition</button>
         <div class="description"><span class= "bakedgoodheader">Chocolate ~ </span><span class = "info">Rich milk chocolate cake with chocolate frosting swirl</span></div>
         <div class="description"><span class= "bakedgoodheader">Vanilla ~ </span><span class = "info">Vanilla cake with chocolate or vanilla frosting</span></div>
         <div class="description"><span class= "bakedgoodheader">Confetti ~ </span><span class = "info">Vanilla confetti cake with chocolate or vanilla frosting plus sprinkles</span></div>
@@ -93,6 +105,8 @@
       <br>
       <div class="content">
         <a class="headermenu">Donuts ... $2.50</a>
+        <br>
+        <button type="button" class="btn btn-outline-default waves-effect NutritionBtn" data-type= "donuts"><i class="fas fa-star pr-2" aria-hidden="true"></i>Nutrition</button>
         <div class="description"><span class= "bakedgoodheader">Glazed ~ </span><span class = "info">Our famous freshly made glazed donut</span></div>
         <div class="description"><span class= "bakedgoodheader">Chocolate Sprinkle ~ </span><span class = "info">Freshly made donut with rich milk chocolate icing and rainbow sprinkles</span></div>
         <div class="description"><span class= "bakedgoodheader">Seasonal Favorites ~ </span><span class = "info">Apple cider, Pumpkin, Gingerbread</span></div>
@@ -105,6 +119,8 @@
       <br>
       <div class="content">
         <a class="headermenu">Cookies ... $1.50</a>
+        <br>
+        <button type="button" class="btn btn-outline-default waves-effect NutritionBtn" data-type= "cookies"><i class="fas fa-star pr-2" aria-hidden="true"></i>Nutrition</button>
         <div class="description"><span class= "bakedgoodheader">Chocolate Chip ~ </span><span class = "info">Warm cookie with milk or dark chocolate chips</span></div>
         <div class="description"><span class= "bakedgoodheader">Sugar ~ </span><span class = "info">Soft and delicious...add icing for a sweeter taste</span></div>
         <div class="description"><span class= "bakedgoodheader">Peanut Butter ~ </span><span class = "info">Made with organic peanut butter and peanut butter chips</span></div>
@@ -117,6 +133,8 @@
       <br>
       <div class="content">
         <a class="headermenu">Homemade Pies ... $20</a>
+        <br>
+        <button type="button" class="btn btn-outline-default waves-effect NutritionBtn" data-type= "pies"><i class="fas fa-star pr-2" aria-hidden="true"></i>Nutrition</button>
         <div class="description"><span class= "bakedgoodheader">Apple ~ </span><span class = "info">Just like Mom used to make...our spin on the American classic</span></div>
         <div class="description"><span class= "bakedgoodheader">Cherry ~ </span><span class = "info">Sweet and tart cherries with famous lattice design</span></div>
         <div class="description"><span class= "bakedgoodheader">Pecan ~ </span><span class = "info">Sweet and gooey pecan filling atop our homemade pie crust </span></div>
@@ -143,6 +161,25 @@
   <br>
   <br>
   <br>
+  <div class="modal fade MyModal" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Nutrient Info</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+          ...
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+          </div>
+      </div>
+    </div>
+  </div>
     <footer>
         <h4>&copy; 2020 Drury Lane Sweets</h4>
         <p>123 Main Street, Somewhere, New Hampshire</p>
@@ -154,9 +191,9 @@
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
     
-    <script src = "./assets/script.js"> </script> 
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script defer src = "./assets/script.js"> </script> 
+
 </body>
 </html>
