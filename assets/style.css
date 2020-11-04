@@ -142,3 +142,34 @@ footer {
         height:auto;
     }
 }
+
+/* Menu Page CSS*/
+.image {
+height: 50px;
+width: 50px;
+}
+.List-items{
+    margin: auto;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+.menuimage{
+    padding: 5px;
+  width: 200px;
+  border-radius: 50%;
+}
+.headermenu{
+    font-size: 40px;
+    font-weight: bold;
+}
+.Page-links{
+    text-align: center;
+    font-size: 20px;
+}
+.bakedgoodheader{
+    font-weight: bold;
+}
+.info{
+    font-size: 20px;
+}
