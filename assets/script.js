@@ -1,4 +1,3 @@
- Menu-Page
 // Menu Api JS
     $(document).ready(function() {
         
@@ -45,7 +44,6 @@
         return nutrientEl;
       }
     });
-=======
 function getNutrientInfo(dessertName) {
     const queryURL = "https://trackapi.nutritionix.com/v2/natural/nutrients"
     const sendQueryData = {
@@ -100,4 +98,3 @@ $("#add-to-cart").on("click", function(){
 //   updateCart();
 //   updateProductList();
 // }
-main
