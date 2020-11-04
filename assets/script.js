@@ -44,6 +44,7 @@
         return nutrientEl;
       }
     });
+
 function getNutrientInfo(dessertName) {
     const queryURL = "https://trackapi.nutritionix.com/v2/natural/nutrients"
     const sendQueryData = {
@@ -64,37 +65,11 @@ function getNutrientInfo(dessertName) {
 getNutrientInfo("cakes")
     });
 
-//for menu page
+//Cart JS    
+var test = $("#cake-one-q").text()
 
-$("#add-to-cart").on("click", function(){
-  console.log("buttons work")
+$(".update").on("click", function(){
+  console.log("works")
+  console.log(test)
 })
 
-//Copied from MDBootsrap eCommerce
-// $('#add-to-cart').on('click', (e) => {
-//   //addToCart(e.currentTarget)
-//   console.log("buttons work");
-// })
-
-// const addToCart = (product) => {
-//   const productId = $(product).attr('productId');
-//   const isAlreadyInCart = $.grep(productsInCart, el => {return el.id == productId}).length;
-
-//   if (isAlreadyInCart) {
-//     $.each(storageData, (i, el) => {
-//       if (productId == el.id) {
-//         el.itemsNumber += 1;
-//       }
-//     })
-//   } else {
-//     const newProduct = {
-//       id: Number(productId),
-//       itemsNumber: 1
-//     }
-
-//     storageData.push(newProduct);
-//   }
-
-//   updateCart();
-//   updateProductList();
-// }
