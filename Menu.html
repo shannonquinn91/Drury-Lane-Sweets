@@ -16,46 +16,56 @@
     <title>Drury Lane Sweets</title>
 </head>
 <body>
-  <!--Navbar-->
-<nav class="navbar navbar-light yellow lighten-4 mb-4">
-  
-  <!-- Navbar brand -->
-  <h1 class="navbar-brand" href="#">Drury Lane Sweets</h1>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light nav-color nav-menu mb-3">
+      <!-- Navbar brand -->
+      <h1 class="navbar-brand ml-2" href="#">Drury Lane Sweets</h1>
+      <!-- Collapse button -->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
+      aria-label="Toggle navigation"><span class="black-text"><i class="fas fa-bars fa-1x"></i></span></button>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent41">
+      <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item menu-item">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item menu-item ">
+                  <a class="nav-link active" href="Menu.html">Menu
+                    <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+              <li class="nav-item menu-item ">
+                  <a class="nav-link" href="Catering.html">Catering
+                      </a>
+              </li>
+              <li class="nav-item menu-item ">
+                   <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item menu-item ">
+                  <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item menu-item ">
+                  <a class="nav-link" href="#">Order Online</a>
+              </li>
+              <li class="nav-item menu-item "> 
+                  <a class="nav-link" href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+              </li> 
+          </ul>
+      <!-- Links -->
+      </div>
+      <!-- Collapsible content -->
+  </nav>
+<header class="d-flex">
+  <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg">
 
-  <!-- Collapse button -->
-  <button class="navbar-toggler toggler-example purple darken-3" type="button" data-toggle="collapse"
-    data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
-    aria-label="Toggle navigation"><span class="white-text"><i class="fas fa-bars fa-1x"></i></span></button>
-
-  <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent41">
-
-    <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Catering</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Order Online</a>
-      </li>
-      <li class="nav-item">
-        <button  class="btn btn-outline-default btn-rounded waves-effect"><i class="fas fa-shopping-cart"></i></button>
-        </li>
-    </ul>
-    <!-- Links -->
-
+    <div class="Page-links ">
+    <a href="#cakes">Cakes | </a>
+    <a href="#cupcakes">Cupcakes | </a>
+    <a href="#donuts">Donuts | </a>
+    <a href="#cookies">Cookies | </a>
+    <a href="#pies">Homemade Pies</a>
   </div>
   <!-- Collapsible content -->
 
@@ -168,7 +178,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
           <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Nutrient Info</h5>
+          <h5 class="modal-title" id="exampleModalLabel"><strong>Nutrient Info</strong></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -177,7 +187,7 @@
           ...
           </div>
           <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+          <button type="button" class="btn modal-btn" data-dismiss="modal">OK</button>
           </div>
       </div>
     </div>
