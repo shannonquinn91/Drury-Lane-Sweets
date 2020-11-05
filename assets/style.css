@@ -173,3 +173,14 @@ width: 50px;
 .info{
     font-size: 20px;
 }
+
+.modal-header, .modal-btn{
+    background-color:#2bbbad ;
+}
+
+.Page-links{
+    margin: 20px 270px;
+    font-weight: 400;
+    font-size: 24px;
+    
+}
