@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css"/>
-    <!-- Font Awesome -->
+       <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- mapbox css-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+        <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script>
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
@@ -19,21 +23,36 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src = "./assets/script.js"> </script> 
+    <link rel="stylesheet" href="./style.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/javascript<ntic.min.js"></script> -->
-    <!-- <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+        <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script>  
+        <script src = "script.js"> </script> 
+
+        
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drury Lane Sweets</title>
 </head>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 <body>
+  <div id='map' style='width: 400px; height: 300px;margin: auto;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW15YmV0aHVwdG9uIiwiYSI6ImNrZ3h0b3F2ZDBsZ2syeHM0amU2ajhoZXoifQ.mv73N3OCxLBZ_7g5leHC1g';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [-71, 43], // starting position [lng, lat]
+zoom: 10 // starting zoom
+});
+
+</script>
+
     <div class = "container-fluid">
       <div class = "row">
-        <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg"> 
+        <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "images/logo.jpg"> 
         <div class="ui stackable container menu">
           <div class=" header item">
             Home
@@ -59,41 +78,19 @@
             <a class="item">
               <i class="fas fa-shopping-cart fa-2x"></i>
             </a>
+     
           </div>
-        </div>
-      </div>
-    </div>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-10 carouselImage" src="assets/images/cake.jpg" 
-              alt="Chocolate cake image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/cupcake.jpg" 
-              alt="Chocolate cupcake with strawberry cream topping image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/cookies.jpg" 
-              alt="Chocolate chip cookies image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/donuts.jpg" 
-              alt="Variety of flavored donuts image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/bundt-cake.jpg" 
-              alt="Bundt cake image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/pastries.jpg" 
-              alt="Variety of pastries image">
-          </div>
-        </div>
-      </div>
-    <footer>
+          <div id='map' style='width: 400px; height: 300px;margin: auto;'></div>
+          <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoiYW15YmV0aHVwdG9uIiwiYSI6ImNrZ3h0b3F2ZDBsZ2syeHM0amU2ajhoZXoifQ.mv73N3OCxLBZ_7g5leHC1g';
+          var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: [-71, 43], // starting position [lng, lat]
+          zoom: 10 // starting zoom
+          });
+  
+     <footer>
         <h4>&copy; 2020 Drury Lane Sweets</h4>
-        <p>123 Main Street, Kenne, New Hampshire 03844</p>
+        <p>123 Main Street, Somewhere, New Hampshire 03844</p>
     </footer>
-</body>
-</html>
