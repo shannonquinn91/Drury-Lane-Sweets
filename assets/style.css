@@ -184,3 +184,8 @@ width: 50px;
     font-size: 24px;
     
 }
+.menutitle{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
+}
