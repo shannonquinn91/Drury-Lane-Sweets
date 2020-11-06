@@ -64,13 +64,41 @@ body{
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    
     width: 100%;
     color:black;
     text-align: center;
     height:11%;
     background-color: rgb(255, 199, 94);
     padding:10px;
+    clear: both;
+}
+
+
+
+.sidebar {
+    width: 400px;
+    height: 800px
+    margin: 50px;
+    
+    }
+    
+    .story{
+    font-family: 'Cabin', sans-serif;
+    font-size: 19px;
+    /* width: 900px; */
+    height: 800px
+    margin 100px;
+    
+    }
+
+    #h3{
+        font-family: 'Cabin', sans-serif;
+        padding-top: 40px;
+    }
+
+.responsive {
+width: 100%;
+height: auto;
+
 }
