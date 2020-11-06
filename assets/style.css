@@ -1,72 +1,122 @@
+/* common body, container, navigation bar, logo, title, modal and footer styles*/
 body{
     background-image:url("./images/body-background.png");
  }
 
+.container-fluid{
+    width:97%;
+}
+
 .nav-menu{
      padding:0;
-     height:60px;    
+     height:55px;    
 }
 
 .menu-item{
-    padding:0px 25px;
+    padding: 0px 25px;
 }
 
 .nav-link{
-    padding:10px 25px;
+    padding:7px 25px;
     background-color: rgb(255, 199, 94); 
 }
 
-.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link{
+/* applies a different background color to the default MDBootstrap navbar including links*/
+.navbar.navbar-light .navbar-nav .nav-item .nav-link{
     background-color: rgb(255, 199, 94); 
+    font-weight: 400;
 }
 
 .nav-color{
     background-color: rgb(255, 199, 94);
 }
 
+.title{
+    font-family: 'Kalam', cursive;
+    font-size: 44px;
+    font-weight: bold;
+    color: darkmagenta;
+    text-align: center;
+}
+
+h1, h5{
+    font-weight: 400;
+}
+
 .logo{
     height:150px;
     width: 200px;
-    margin-left: 40px;   
-}
-
-.container{
-    padding:0;
-    margin: 10px;
-}
-
-.carouselImage{
-    display: block;
-    margin:2px auto;
-    width: 800px;
-    height: 460px;
-    border-radius: 1%;
-    position: relative;
-    z-index:-1
 }
 
 footer {
     width: 100%;
     color:black;
     text-align: center;
-    height:11%;
+    height:75px;
     background-color: rgb(255, 199, 94);
     padding:10px;
+    font-size: 14px;
+}
+
+.modal-dialog{
+    width:300px;
+}
+
+.modal-header, .modal-btn{
+    background-color:#2bbbad ;
+    /* background-color: #4285f4 ; */  
+}
+
+/*Home-page styles*/
+
+/* styles and center-aligned the carousel image on home page*/
+.carouselImage{
+    display: block;
+    margin:2px auto;
+    width: 800px;
+    height: 460px;
+    border-radius: 1%;
+}
+
+/* Menu Page CSS*/
+
+.List-items{
+    margin: auto;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+.menuimage{
+    padding: 5px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.headermenu{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bakedgoodheader{
+    font-weight: bold;
+}
+.info{
+    font-size: 20px;
+}
+
+.page-links{
+    margin: auto;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;  
+}
+
+.category-links{
+    color: rgb(233, 30, 155);
+    font-weight: 500;
 }
 
 /*Catering styles*/
-
-.container-fluid{
-    width:95%;
-}
-
-#catering-title{
-    font-family: 'Kalam', cursive;
-    font-size: 44px;
-    font-weight: bold;
-    color: darkmagenta;
-    margin: 30px 80px;
-}
 
 .catering-content {
     font-family: 'Cabin', sans-serif;
@@ -78,6 +128,7 @@ footer {
     width: 450px;
     height: auto;
 } 
+
 .cust-review{
     border: 2px solid gray;
     font-family: 'Kalam', cursive;
@@ -116,6 +167,7 @@ footer {
     font-size: 14px;
 }
 
+/* Media screen queries for better responsiveness*/
 @media screen and (max-width: 1030px){
     .catering-photo{
         width:425px;
@@ -136,6 +188,7 @@ footer {
         height:auto;
     }
 } 
+
 @media screen and (max-width: 875px){
     .catering-photo, .cake-photo{
         width:450px;
@@ -143,49 +196,12 @@ footer {
     }
 }
 
-/* Menu Page CSS*/
-.image {
-height: 50px;
-width: 50px;
-}
-.List-items{
-    margin: auto;
-    text-align: center;
-    font-family: 'Cabin', sans-serif;
-    font-size: 30px;
-}
-.menuimage{
-    padding: 5px;
-  width: 200px;
-  border-radius: 50%;
-}
-.headermenu{
-    font-size: 40px;
-    font-weight: bold;
-}
-.Page-links{
-    text-align: center;
-    font-size: 20px;
-}
-.bakedgoodheader{
-    font-weight: bold;
-}
-.info{
-    font-size: 20px;
-}
+/* order-online page styles */
 
-.modal-header, .modal-btn{
-    background-color:#2bbbad ;
-}
-
-.Page-links{
-    margin: 20px 270px;
+.list-group{
     font-weight: 400;
-    font-size: 24px;
-    
 }
-.menutitle{
-    text-align: center;
-    font-weight: bold;
-    font-family: 'Cabin', sans-serif;
+
+hr{
+    border-width: 2px;
 }
