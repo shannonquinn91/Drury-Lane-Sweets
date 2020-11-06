@@ -5,7 +5,7 @@ Drury Lane Sweets is a local small business for baked goods. We make cakes, cupc
 # User Story: 
 As a person with a sweet tooth,
 I want to order desserts online from a local bakery,
-So that satiate my dessert craving at home.
+So that I can satiate my dessert craving at home.
 
 
 # Links
