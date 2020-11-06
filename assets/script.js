@@ -1,3 +1,4 @@
+
 // Menu Api JS
     $(document).ready(function() {
         
@@ -51,7 +52,7 @@
         const nutrientEl = $('<li>').text(nutrientText + nutrient + units);
         return nutrientEl;
       }
-    
+
 
     
 
@@ -85,6 +86,7 @@
             {category: "pies", type: "lemon", price: "20.00", qty: 0}
         ]
     localStorage.setItem("desserts", JSON.stringify(desserts));
+
     }
 
 
@@ -133,6 +135,7 @@
 
 
 });
+
 
 
 
