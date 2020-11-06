@@ -1,25 +1,28 @@
 // Menu Api JS
     $(document).ready(function() {
         
-      
+    // Adds event listener to Nutrition button on click event 
     $(".NutritionBtn").on("click",function(){
+        // gets the category of dessert using the attribute associated with the clicked button and assigns it
         let foodItem = $(this).attr("data-type")
+        // calls the function that will get the nutrition data 
         getNutrientInfo(foodItem)
     });
 
+    // sends an ajax request to get the nutrition data 
     function getNutrientInfo(dessertName) {
         const queryURL = "https://trackapi.nutritionix.com/v2/natural/nutrients"
         const sendQueryData = {
             "query": dessertName,
             "locale": "en_US"
         }
-        try {
-            $.ajax({
+        
+        $.ajax({
             url: queryURL,
             method: "POST",
             headers: {"x-app-id": "c8185330", "x-app-key": "e55f4299165ce2d079e7e2be8672a18a", "x-remote-user-id": "jesal", "Content-Type": "application/json", "accept": "application/json"},
             data: JSON.stringify(sendQueryData)
-            }).then(function(response) {
+        }).then(function(response) {
             console.log(response);
             const data = response.foods[0];
             const ul= $('<ul>');
@@ -37,46 +40,18 @@
             ul.append(renderNutrientInfo(data.nf_total_carbohydrate, "Total carbohydrate: ", "g"));
             ul.append(renderNutrientInfo(data.nf_total_fat, "Total fat: ", "g"));
             $('.modal-body').append(ul);
-            $(".MyModal").modal('show');
-          });
-        } catch (error) {
-            console.log("Error Occured!!")
-            $('.modal-body').empty();
-            $('.modal-body').text("Something went wrong. Please try again!")
-            $(".MyModal").modal('show');
-        }
-      }
-      function renderNutrientInfo(nutrient, nutrientText, units){
+            $(".nutrition-modal").modal('show');
+        });
+    }
+
+    function renderNutrientInfo(nutrient, nutrientText, units){
         const nutrientEl = $('<li>').text(nutrientText + nutrient + units);
         return nutrientEl;
-      }
+    }
     
-
-    function getNutrientInfo(dessertName) {
-        const queryURL = "https://trackapi.nutritionix.com/v2/natural/nutrients"
-        const sendQueryData = {
-            "query": dessertName,
-            "locale": "en_US"
-        }
-            $.ajax({
-            url: queryURL,
-            method: "POST",
-            headers: {"x-app-id": "c8185330", "x-app-key": "e55f4299165ce2d079e7e2be8672a18a", "x-remote-user-id": "jesal", "Content-Type": "application/json", "accept": "application/json"},
-            data: JSON.stringify(sendQueryData)
-            }).then(function(response) {
-            console.log(response);
-            });
-        }
-        $("#cakes").on("click",function(){
-            //console.log("test")
-            getNutrientInfo("cakes")
-        });
-
     
     //cart-page js
     reset();
-
-
 
     function reset(){
         const desserts = [
@@ -101,7 +76,7 @@
             {category: "pies", type: "pecan", price: "20.00", qty: 0},
             {category: "pies", type: "lemon", price: "20.00", qty: 0}
         ]
-    localStorage.setItem("desserts", JSON.stringify(desserts));
+        localStorage.setItem("desserts", JSON.stringify(desserts));
     }
 
 
@@ -132,6 +107,7 @@
             const typeQuantity = dessertList[i].qty;
             typeTotal= parseFloat(typeQuantity*typePrice);
             quantityTotal += typeQuantity;
+            $('#num-items').text(quantityTotal);
             $('#cartQuantity').text(quantityTotal);
             orderTotal += typeTotal;
             if (category===dessertList[i].category){
@@ -146,8 +122,6 @@
         reset();
         $(".MyModal").modal('show');
     })
-
-
 });
 
 

@@ -4,25 +4,31 @@ body{
 
 .nav-menu{
      padding:0;
-     height:60px;    
+     height:55px;    
 }
 
 .menu-item{
-    padding:0px 25px;
+    padding: 0px 25px;
 }
 
 .nav-link{
-    padding:10px 25px;
+    padding:7px 25px;
     background-color: rgb(255, 199, 94); 
 }
 
-.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link{
+.navbar.navbar-light .navbar-nav .nav-item .nav-link{
     background-color: rgb(255, 199, 94); 
+    font-weight: 400;
 }
 
 .nav-color{
     background-color: rgb(255, 199, 94);
 }
+
+h1{
+    font-weight: 400;
+}
+
 
 .logo{
     height:150px;
@@ -30,10 +36,10 @@ body{
     margin-left: 40px;   
 }
 
-.container{
+/* .container{
     padding:0;
     margin: 10px;
-}
+} */
 
 .carouselImage{
     display: block;
@@ -49,9 +55,10 @@ footer {
     width: 100%;
     color:black;
     text-align: center;
-    height:11%;
+    height:75px;
     background-color: rgb(255, 199, 94);
     padding:10px;
+    font-size: 14px;
 }
 
 /*Catering styles*/
@@ -175,7 +182,9 @@ width: 50px;
 }
 
 .modal-header, .modal-btn{
-    background-color:#2bbbad ;
+    /* background-color:#2bbbad ; */
+    background-color: #4285f4 ;
+    
 }
 
 .Page-links{
@@ -183,4 +192,13 @@ width: 50px;
     font-weight: 400;
     font-size: 24px;
     
+}
+
+.modal-dialog{
+    width:300px;
+}
+
+/* cart-page */
+hr{
+    border-width: 2px;
 }

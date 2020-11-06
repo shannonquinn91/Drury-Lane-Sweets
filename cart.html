@@ -15,6 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drury Lane Sweets</title>
+    <link rel="icon" href="./assets/images/favicon.ico">
 </head>
 <body>
     <!--Navbar-->
@@ -49,6 +50,7 @@
               </li>
               <li class="nav-item menu-item "> 
                   <a class="nav-link active" href="#"><i class="fas fa-shopping-cart fa-2x"></i>
+                    <span class="counter counter-floating counter-lg-icon" id="cartQuantity"></span>
                     <span class="sr-only">(current)</span></a>
               </li> 
           </ul>
@@ -772,7 +774,7 @@
       <div class="col-lg-4">
 
         <!-- Card -->
-        <div class="mb-3">
+        <div class="m-5">
           <div class="pt-4">
 
             <h5 class="mb-3">Order Total</h5>
@@ -831,7 +833,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                       Your order has been successfully placed. Payment is due on delivery. <br>
+                       Your order has been successfully placed. Payment is due on delivery.
                        Enjoy the desserts! Thank you!
                     </div>
                     <div class="modal-footer">
@@ -849,12 +851,12 @@
 
   </section>
   <!--Section: Block Content-->
-    
+ </div>   
   <br>
-      <footer>
-        <h4>&copy; 2020 Drury Lane Sweets</h4>
-        <p>123 Main Street, Somewhere, New Hampshire</p>
-    </footer>
+  <footer class="mt-3">
+    <h6><strong>&copy; 2020 Drury Lane Sweets</strong></h6>
+    <p>123 Main Street, Somewhere, New Hampshire</p>
+ </footer>
 
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
