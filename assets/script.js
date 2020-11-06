@@ -1,3 +1,4 @@
+
 // Menu Api JS
     $(document).ready(function() {
         
@@ -16,11 +17,15 @@
             "query": dessertName,
             "locale": "en_US"
         }
-        
         $.ajax({
             url: queryURL,
             method: "POST",
             headers: {"x-app-id": "c8185330", "x-app-key": "e55f4299165ce2d079e7e2be8672a18a", "x-remote-user-id": "jesal", "Content-Type": "application/json", "accept": "application/json"},
+            error:function(e){
+                $('.modal-body').empty();
+                $('.modal-body').text("Something went wrong. Please try again!")
+                $(".MyModal").modal('show'); 
+            },
             data: JSON.stringify(sendQueryData)
         }).then(function(response) {
             console.log(response);
@@ -40,17 +45,16 @@
             ul.append(renderNutrientInfo(data.nf_total_carbohydrate, "Total carbohydrate: ", "g"));
             ul.append(renderNutrientInfo(data.nf_total_fat, "Total fat: ", "g"));
             $('.modal-body').append(ul);
-            $(".nutrition-modal").modal('show');
+            $(".MyModal").modal('show');
         });
-    }
-
-    function renderNutrientInfo(nutrient, nutrientText, units){
+        
+      }
+      function renderNutrientInfo(nutrient, nutrientText, units){
         const nutrientEl = $('<li>').text(nutrientText + nutrient + units);
         return nutrientEl;
-    }
-    
-    
-    //cart-page js
+      }
+
+//cart-page js
     reset();
 
     function reset(){
@@ -78,7 +82,6 @@
         ]
         localStorage.setItem("desserts", JSON.stringify(desserts));
     }
-
 
     $('.userInput').focusout(function(){
         const dessertList = JSON.parse(localStorage.getItem("desserts")) || [];
@@ -114,8 +117,9 @@
                 categorySum += typeTotal;
             }
         }
-        $("#" + category + "-total").text(categorySum);
-        $("#total-due").text(orderTotal + 2);
+        $("#" + category + "-total").text("$" + categorySum.toFixed(2));
+        $("#total-due").text("$" + (orderTotal + 2).toFixed(2));
+        $("#num-items").text(quantityTotal);
     }
     
     $('#check-out').click(function(){
@@ -123,6 +127,7 @@
         $(".MyModal").modal('show');
     })
 });
+
 
 
 

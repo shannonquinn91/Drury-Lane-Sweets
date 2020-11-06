@@ -198,6 +198,12 @@ width: 50px;
     width:300px;
 }
 
+.menutitle{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Cabin', sans-serif;
+}
+
 /* cart-page */
 hr{
     border-width: 2px;
