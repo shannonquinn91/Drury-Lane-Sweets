@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Drury Lane Sweets</title>
+    <!--custom made favicon-->
+    <link rel="icon" href="./assets/images/favicon.ico">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -9,864 +17,841 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!--External CSS stylesheet-->
     <link rel="stylesheet" href="./assets/style.css">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drury Lane Sweets</title>
-    <link rel="icon" href="./assets/images/favicon.ico">
 </head>
 <body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light nav-color nav-menu mb-3">
-      <!-- Navbar brand -->
-      <h1 class="navbar-brand ml-2" href="#">Drury Lane Sweets</h1>
-      <!-- Collapse button -->
-      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-      data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
-      aria-label="Toggle navigation"><span class="black-text"><i class="fas fa-bars fa-1x"></i></span></button>
-      <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent41">
-      <!-- Links -->
-          <ul class="navbar-nav ml-auto">
-              <li class="nav-item menu-item">
-                  <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item menu-item ">
-                  <a class="nav-link" href="Menu.html">Menu</a>
-              </li>
-              <li class="nav-item menu-item ">
-                  <a class="nav-link" href="Catering.html">Catering</a>
-              </li>
-              <li class="nav-item menu-item ">
-                   <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item menu-item ">
-                  <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item menu-item ">
-                  <a class="nav-link" href="#">Order Online</a>
-              </li>
-              <li class="nav-item menu-item "> 
-                  <a class="nav-link active" href="#"><i class="fas fa-shopping-cart fa-2x"></i>
-                    <span class="counter counter-floating counter-lg-icon" id="cartQuantity"></span>
-                    <span class="sr-only">(current)</span></a>
-              </li> 
-          </ul>
-      <!-- Links -->
-      </div>
-      <!-- Collapsible content -->
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light nav-color nav-menu mb-3">
+    <!-- Navbar brand -->
+    <h1 class="navbar-brand ml-2">Drury Lane Sweets</h1>
+    <!-- Collapse button -->
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
+    aria-label="Toggle navigation"><span class="black-text"><i class="fas fa-bars fa-1x"></i></span></button>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent41">
+    <!--Navigation Links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item menu-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item menu-item ">
+                <a class="nav-link" href="Menu.html">Menu</a>
+            </li>
+            <li class="nav-item menu-item ">
+                <a class="nav-link" href="Catering.html">Catering</a>
+            </li>
+            <li class="nav-item menu-item ">
+                  <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item menu-item ">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <!--active page-->
+            <li class="nav-item menu-item active">
+                <a class="nav-link" href="#">Order Online
+                  <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item menu-item"> 
+                <a class="nav-link" href="#"><i class="fas fa-shopping-cart fa-2x"></i>
+                  <span class="counter counter-floating counter-lg-icon" id="cartQuantity"></span>
+                  </a>
+            </li> 
+        </ul>
+    <!--Navigation Links -->
+    </div>
+    <!-- Collapsible content -->
   </nav>
-  <div class="container">
-        <div class="row">
-            <div class="col-6 col-md-4">
-                <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg">
-            </div>
-            <div class="col-12 col-md-8">
-                <h2>Your Cart</h2>
-            </div>
-        </div>
-    </div>
-
-    <!--Section: Block Content-->
-<div class="container">
-  <!--Section: Block Content-->
-  <section>
-
-    <!--Grid row-->
+  <!--Header-->
+  <header class="container-fluid">
     <div class="row">
-
-      <!--Grid column-->
-      <div class="col-lg-8">
-        
-
-        <!-- Card -->
-        <div class="mb-3">
-          <div class="pt-4 wish-list">
-
-            <h5 class="mb-4">Cart (<span id="num-items">#</span> items)</h5>
-            <h2>Cakes</h2>
-            <!--Choc Cake-->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cake.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Chocolate Cake</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cakes" data-type="chocolate">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$25.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!--Van Cake-->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cake.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Vanilla Cake</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cakes" data-type="vanilla">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$25.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!--Coffee Cake-->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/bundtcake.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Coffee Cake</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cakes" data-type="coffee">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$25.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!--Carrot Cake-->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/bundtcake.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Carrot Cake</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cakes" data-type="carrot">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$25.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <button id= "update" type="button" class="btn btn-primary btn-block update">Update Cakes Total</button> -->
-
-            <hr class="mb-4">
-            <h2>Cupcakes</h2>
-            <!--Choc Cupcake-->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cupcake.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Chocolate Cupcake</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cupcakes" data-type="chocolate">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$5.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!--Van Cupcake-->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cupcake.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Vanilla Cupcake</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cupcakes" data-type="vanilla">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$5.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!--Confetti Cupcake-->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cupcake.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Confetti Cupcake</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cupcakes" data-type="confetti">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$5.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!--Red Velvet Cupcake-->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cupcake.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Red Velvet Cupcake</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cupcakes" data-type="red-velvet">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$5.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <button id="update" type="button" class="btn btn-primary btn-block update">Update Cupcakes Total</button> -->
-
-            <hr class="mb-4">
-            <h2>Donuts</h2>
-            <!-- Glazed Donut -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/donuts.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Glazed Donut</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="donuts" data-type="glazed">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$2.50</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- Choc Sprink Donut -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/donuts.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Chocolate Sprinkles Donut</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="donuts" data-type="chocolate-sprinkles">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$2.50</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- Seasonal Donut -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/donuts.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Seasonal Donut (Pumpkin)</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="donuts" data-type="seasonal">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$2.50</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- Jelly Donut -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/donuts.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Jelly Filled Donut (Raspberry Jelly)</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="donuts" data-type="jelly">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$2.50</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <button id="update" type="button" class="btn btn-primary btn-block update">Update Donuts Total</button> -->
-
-            <hr class="mb-4">
-            <h2>Cookies</h2>
-            <!-- Choc Chip Cookie -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cookies.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Chocolate Chip Cookie</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cookies" data-type="chocolate-chip">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$1.50</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- Sugar Cookie -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cookies.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Sugar Cookie</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cookies" data-type="sugar">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$1.50</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- PB Cookie -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cookies.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Peanut Butter Cookie</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cookies" data-type="peanut-butter">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$1.50</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- Snicker Cookie -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/cookies.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Snickerdoodle Cookie</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cookies" data-type="snickerdoodle">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$1.50</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <button id="update" type="button" class="btn btn-primary btn-block update">Update Cookies Total</button> -->
-
-            <hr class="mb-4">
-            <h2>Pies</h2>
-            <!-- Apple Pie -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/pies.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Apple Pie</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="pies" data-type="apple"> 
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$20.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- Cherry Pie -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/pies.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Cherry Pie</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="pies" data-type="cherry">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$20.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- Pecan Pie -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/pies.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Pecan Pie</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="pies" data-type="pecan">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$20.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr class="mb-4">
-            <!-- Lemon Pie -->
-            <div class="row mb-4">
-              <div class="col-md-5 col-lg-3 col-xl-3">
-                <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
-                  <img class="img-fluid w-100"
-                    src="assets/images/pies.jpg" alt="Sample">
-                  <a href="#!">
-                  </a>
-                </div>
-              </div>
-              <div class="col-md-7 col-lg-9 col-xl-9">
-                <div>
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h5>Lemon Meringue Pie</h5>
-                    </div>
-                    <div>
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="pies" data-type="lemon">
-                      </div>
-                      <small id="passwordHelpBlock" class="form-text text-muted text-center">
-                        (Enter quantity)
-                      </small>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0"><span><strong id="summary">$20.00</strong></span></p class="mb-0">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <button id="update" type="button" class="btn btn-primary btn-block update">Update Pies Total</button> -->
-
-            <hr class="mb-4">
-            <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding
-              items to your cart does not mean booking them.</p>
-          </div>
+        <div class="col-6 col-md-4">
+            <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg">
         </div>
-        <!-- Card -->
-        <div class="mb-3">
-          <div class="pt-4">
-
-            <h5 class="mb-4">We accept</h5>
-
-            <img class="mr-2" width="45px"
-              src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
-              alt="Visa">
-            <img class="mr-2" width="45px"
-              src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
-              alt="American Express">
-            <img class="mr-2" width="45px"
-              src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
-              alt="Mastercard">
-            <img class="mr-2" width="45px"
-              src="https://mdbootstrap.com/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.png"
-              alt="PayPal acceptance mark">
-          </div>
+        <div class="col-12 col-md-4">
+            <h1 class="title mt-4">Place Your Order!</h1>
         </div>
-        <!-- Card -->
-
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-4">
-
-        <!-- Card -->
-        <div class="m-5">
-          <div class="pt-4">
-
-            <h5 class="mb-3">Order Total</h5>
-
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                Cakes Total:
-                <span id="cakes-total">0</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                Cupcakes Total
-                <span id="cupcakes-total">0</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                Donuts Total
-                <span id="donuts-total">0</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                Cookies Total
-                <span id="cookies-total">0</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                Pies Total
-                <span id="pies-total">0</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                Sub-Total
-                <span id="sub-total">0</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                Delivery
-                <span>$2.00</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-                <div>
-                  <strong>Total Due:</strong>
-                </div>
-                <span id="total-due"><strong></strong></span>
-              </li>
-            </ul>
-
-            <button type="button" class="btn btn-primary btn-block" id="check-out"><strong>go to checkout</strong></button>
-
-          </div>
-        </div>
-        <!-- Card -->
-        <!--Modal-->
-        <div class="modal fade MyModal" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><strong>Order successful!</strong></h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                       Your order has been successfully placed. Payment is due on delivery.
-                       Enjoy the desserts! Thank you!
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn modal-btn" data-dismiss="modal">OK</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Modal-->
-      </div>
-      <!--Grid column-->
-
     </div>
-    <!-- Grid row -->
-
-  </section>
-  <!--Section: Block Content-->
- </div>   
+  </header>
+  <!--Main content-->
+  <main>
+    <!--Section: Block Content-->
+    <div class="container-fluid">
+      <!--Section: Block Content-->
+      <section>
+      <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-7">
+            <!-- Card -->
+            <div class="mb-3">
+              <div class="pt-4 wish-list">
+                <h5 class="mb-4"><strong>Cart (<span id="num-items">#</span> items)</strong></h5>
+                <h2 class="category-links mb-3">Cakes</h2>
+                <!--Chocolate Cake-->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cake.jpg" alt="Sample Cake">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Chocolate Cake</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <!--Input box to enter quantity-->
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cakes" data-type="chocolate">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$25.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!--Vanilla Cake-->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cake.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Vanilla Cake</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cakes" data-type="vanilla">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$25.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!--Coffee Cake-->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cake.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Coffee Cake</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cakes" data-type="coffee">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$25.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!--Carrot Cake-->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cake.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Carrot Cake</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cakes" data-type="carrot">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$25.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <h2 class="category-links mb-3">Cupcakes</h2>
+                <!--Chocolate Cupcake-->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cupcake.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Chocolate Cupcake</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cupcakes" data-type="chocolate">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$5.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!--Vanilla Cupcake-->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cupcake.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Vanilla Cupcake</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cupcakes" data-type="vanilla">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$5.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!--Confetti Cupcake-->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cupcake.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Confetti Cupcake</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cupcakes" data-type="confetti">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$5.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!--Red Velvet Cupcake-->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cupcake.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Red Velvet Cupcake</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cupcakes" data-type="red-velvet">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$5.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <h2 class="category-links mb-3">Donuts</h2>
+                <!-- Glazed Donut -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/donuts.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Glazed Donut</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="donuts" data-type="glazed">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$2.50</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Chocolate Sprinkles Donut -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/donuts.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Chocolate Sprinkles Donut</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="donuts" data-type="chocolate-sprinkles">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$2.50</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Seasonal Donut -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/donuts.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Seasonal Donut (Pumpkin)</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="donuts" data-type="seasonal">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$2.50</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Jelly Donut -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/donuts.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Jelly Filled Donut (Raspberry Jelly)</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="donuts" data-type="jelly">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$2.50</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <h2 class="category-links mb-3">Cookies</h2>
+                <!-- Chocolate Chip Cookie -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cookies.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Chocolate Chip Cookie</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cookies" data-type="chocolate-chip">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$1.50</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Sugar Cookie -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cookies.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Sugar Cookie</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cookies" data-type="sugar">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$1.50</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Peanut Butter Cookie -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cookies.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Peanut Butter Cookie</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cookies" data-type="peanut-butter">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$1.50</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Snickerdoodle Cookie -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/cookies.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Snickerdoodle Cookie</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="cookies" data-type="snickerdoodle">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$1.50</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <h2 class="category-links mb-3">Pies</h2>
+                <!-- Apple Pie -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/pies.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Apple Pie</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="pies" data-type="apple"> 
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$20.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Cherry Pie -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/pies.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Cherry Pie</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="pies" data-type="cherry">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$20.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Pecan Pie -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/pies.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Pecan Pie</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="pies" data-type="pecan">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$20.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <!-- Lemon Pie -->
+                <div class="row mb-4">
+                  <div class="col-md-5 col-lg-3 col-xl-3">
+                    <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                      <img class="img-fluid w-100"
+                        src="assets/images/pies.jpg" alt="Sample">
+                      <a href="#!">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-7 col-lg-9 col-xl-9">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <h5>Lemon Meringue Pie</h5>
+                        </div>
+                        <div>
+                          <div class="def-number-input number-input safari_only mb-0 w-100">
+                            <input class="quantity userInput" min="0" name="quantity" value="0" type="number" data-category="pies" data-type="lemon">
+                          </div>
+                          <small class="form-text text-muted text-center">
+                            (Enter quantity)
+                          </small>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0"><span><strong>$20.00</strong></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="mb-4">
+                <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Do not delay the purchase, adding
+                  items to your cart does not mean booking them.</p>
+              </div>
+            </div>
+            <!-- Card -->
+            <div class="mb-3">
+              <div class="pt-4">
+                <h5 class="mb-4">We accept</h5>
+                <img class="mr-2" width="45"
+                  src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                  alt="Visa">
+                <img class="mr-2" width="45"
+                  src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                  alt="American Express">
+                <img class="mr-2" width="45"
+                  src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                  alt="Mastercard">
+                <img class="mr-2" width="45"
+                  src="https://mdbootstrap.com/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.png"
+                  alt="PayPal acceptance mark">
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <!--Grid column-->
+          <div class="col-lg-4">
+            <!-- Card -->
+            <div class="m-5">
+              <div class="pt-4">
+                <h5 class="mb-3">Order Total</h5>
+                <!--Category Totals-->
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Cakes Total:
+                    <span id="cakes-total">0</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Cupcakes Total
+                    <span id="cupcakes-total">0</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Donuts Total
+                    <span id="donuts-total">0</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Cookies Total
+                    <span id="cookies-total">0</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Pies Total
+                    <span id="pies-total">0</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    Sub-Total
+                    <span id="sub-total">0</span>
+                  </li>
+                  <!--Fixed Delivery charges-->
+                  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                    Delivery
+                    <span>$2.00</span>
+                  </li>
+                  <!--Order Total-->
+                  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                    <div>
+                      <strong>Total Due:</strong>
+                    </div>
+                    <span id="total-due"><strong></strong></span>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-primary btn-block" id="check-out"><strong>go to checkout</strong></button>
+              </div>
+            </div>
+            <!-- Card -->
+            <!--Modal for displaying order successful message to user-->
+            <div class="modal fade MyModal" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><strong>Order successful!</strong></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                          Your order has been successfully placed. Payment is due on delivery.
+                          Enjoy the desserts! Thank you!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn modal-btn" data-dismiss="modal">OK</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+          <!--Modal-->
+          </div>
+        <!--Grid column-->
+        </div>
+      <!-- Grid row -->
+      </section>
+    <!--Section: Block Content-->
+    </div>
+  </main>   
   <br>
+  <!--footer-->
   <footer class="mt-3">
     <h6><strong>&copy; 2020 Drury Lane Sweets</strong></h6>
     <p>123 Main Street, Somewhere, New Hampshire</p>
- </footer>
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    <script src = "./assets/script.js"> </script> 
-
+  </footer>
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  <!--External Javascript file-->
+  <script src = "./assets/script.js"> </script> 
 </body>
 </html>
