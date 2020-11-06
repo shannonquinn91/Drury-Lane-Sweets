@@ -6,7 +6,7 @@
         let foodItem = $(this).attr("data-type")
         getNutrientInfo(foodItem)
     });
-
+//function for getting info
     function getNutrientInfo(dessertName) {
         const queryURL = "https://trackapi.nutritionix.com/v2/natural/nutrients"
         const sendQueryData = {
