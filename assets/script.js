@@ -138,8 +138,9 @@
                 categorySum += typeTotal;
             }
         }
-        $("#" + category + "-total").text(categorySum);
-        $("#total-due").text(orderTotal + 2);
+        $("#" + category + "-total").text("$" + categorySum.toFixed(2));
+        $("#total-due").text("$" + (orderTotal + 2).toFixed(2));
+        $("#num-items").text(quantityTotal);
     }
     
     $('#check-out').click(function(){
