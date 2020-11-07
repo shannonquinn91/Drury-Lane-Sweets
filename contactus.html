@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Drury Lane Sweets</title>
+    <!--custom made favicon-->
+    <link rel="icon" href="./assets/images/favicon.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Cabin&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!--Mapbox API-->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <!--External CSS stylesheet-->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light nav-color nav-menu mb-3">
+        <!-- Navbar brand -->
+        <a class="navbar-brand ml-2" href="index.html">Drury Lane Sweets</a>
+        <!-- Collapse button -->
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
+        aria-label="Toggle navigation"><span class="black-text"><i class="fas fa-bars fa-1x"></i></span></button>
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent41">
+        <!--Navigation Links -->
+            <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item menu-item ">
+                        <a class="nav-link" href="Menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="Catering.html">Catering</a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <!--active page-->
+                    <li class="nav-item menu-item active">
+                        <a class="nav-link" href="contactus.html">Contact Us
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link" href="cart.html">Order Online</a>
+                    </li>
+                    <li class="nav-item menu-item"> 
+                        <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    </li> 
+                </ul>
+            </ul>
+        <!--Navigation Links -->
+        </div>
+        <!-- Collapsible content -->
+    </nav>
+    <!--Header-->
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg">
+            </div>
+            <div class="col-12 col-md-6">
+                <h1 class="mt-4 title">Contact Us</h1>
+            </div>
+        </div>
+    </header>
+    <!--Main page content-->
+    <main>
+        <div class="container">
+            <div class="row mt-4">
+                <!--Contact form-->
+                <form class="col-7">
+                    <div class="container mx-3 my-3 px-3 py-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="sub-title">Contact Us</h2>
+                            </div>
+                        </div>
+                        <hr class="mt-0">
+                        <!--Grouping the form input elements-->
+                        <section>
+                            <div class="row">
+                                <div class="col-12 col-sm-10 col-lg-9 form-group">
+                                <!--Name input field-->
+                                    <label for="fullName">Name</label>
+                                    <br>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter you name" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-10 col-lg-9 form-group">
+                                <!--Email address input field-->
+                                <label for="user-email">Email</label>
+                                <br>
+                                <input type="email" class="form-control" id="user-email" placeholder="Enter you email address" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-10 col-lg-9 form-group">
+                                <!--Phone input field-->
+                                <label for="phone">Phone number</label>
+                                <br>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter you phone number e.g. (603)-111-2222" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-10 col-lg-9 form-group">
+                                <!--Message input box-->
+                                <label for="messageText">Message</label>
+                                <br>
+                                <textarea class="form-control" id="messageText" rows="3" placeholder="Enter your message here" required></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <!--Button to submit the contact form details-->
+                                <button type="submit" class="btn btn-primary btn form-btn rounded-0" id="contactBtn">Submit</button>
+                            </div>
+                        </section>
+                    </div>
+                </form>
+                <!--Contact details-->
+                <div class="col-4">
+                    <div class="contact-details ml-5 mt-3">
+                        <h2 class="sub-title">Get In Touch</h2>
+                        <h5>(603)-111-2222</h5>
+                        <p>123 Main Street,<br>Keene, New Hampshire 03431</p>
+                        <p>Mon-Fri: 9:00am - 7:00pm<br>Sat-Sun: 10:00am - 2:00pm</p>
+                        <div id='map' class="my-5"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Modal to display message-->
+            <div class="modal fade MyModal" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"><strong>Contact Us</strong></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                           <p>Thank you for reaching out to us!<br>We will contact you shortly.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn modal-btn" data-dismiss="modal"><strong>OK</strong></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer class="mt-4">
+        <h6><strong>&copy; 2020 Drury Lane Sweets</strong></h6>
+        <p>123 Main Street, Keene, New Hampshire 03431</p>
+    </footer>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!--Mapbox API-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <!--External Javascript file-->
+    <script src = "./assets/script.js"></script>    
+</body>
+</html>

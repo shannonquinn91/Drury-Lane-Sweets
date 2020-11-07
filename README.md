@@ -14,6 +14,7 @@ SO THAT I can satiate my dessert craving at home.
 - GitHub: https://github.com/shannonquinn91/Drury-Lane-Sweets
 - Deployed Page: https://shannonquinn91.github.io/Drury-Lane-Sweets/ 
 - Screenshot: ![homepage](assets/images/homepage.png)
+- Demo: ![Website Demo](assets/images/Drury-Lane-Sweets.gif)
 
 # Technologies Used: 
 HTML, CSS, JavaScript, JQuery, AJAX, Google Fonts, Font Awesome, Slack, GitHub, Balsamiq
@@ -59,8 +60,10 @@ Nutritionix, Mapbox
 - Referred to a couple of dessert websites for catering menu content
     https://www.thedesserttray.com/
     https://www.swankdesserts.com/
-    
-- Images have been used from https://unsplash.com/
+- Images have been used from 
+    https://unsplash.com/
+    https://pixabay.com/
+
 
 
 
