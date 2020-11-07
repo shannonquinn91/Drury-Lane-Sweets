@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // Menu API js
+    // Menu-page js
 
     // Adds event listener to Nutrition button on click event 
     $(".NutritionBtn").on("click",function(){
@@ -9,7 +9,7 @@ $(document).ready(function() {
         getNutrientInfo(foodItem)
     });
 
-    // sends an ajax request to get the nutrition data for the requested dessert category
+    // This function sends an ajax request to get the nutrition data for the requested dessert category
     function getNutrientInfo(dessertName) {
         const queryURL = "https://trackapi.nutritionix.com/v2/natural/nutrients"
         // query parameters to be sent in the request
@@ -17,6 +17,7 @@ $(document).ready(function() {
             "query": dessertName,
             "locale": "en_US"
         }
+        // API request
         $.ajax({
             url: queryURL,
             method: "POST",
@@ -153,8 +154,27 @@ $(document).ready(function() {
         // displays the modal with the order successful message on the UI
         $(".MyModal").modal('show');
     })
+
+    // Contact-Us page js
+    
+    // API for displaying the map on Contact Us page using the Address co-ordinates
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYW15YmV0aHVwdG9uIiwiYSI6ImNrZ3h0b3F2ZDBsZ2syeHM0amU2ajhoZXoifQ.mv73N3OCxLBZ_7g5leHC1g';
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71, 43], // starting position [lng, lat]
+        zoom: 10, // starting zoom
+    });
+    // displays the marker on the map
+    var marker = new mapboxgl.Marker()
+    .setLngLat([-71, 43])
+    .addTo(map);
+
+    // Adds event listener to the Submit button on Contact us Page on click event
+    $('#contactBtn').on("click", function(event){
+        event.preventDefault();
+        // displays with modal with message
+        $(".MyModal").modal('show');
+    })
+
 });
-
-
-
-
