@@ -1,68 +1,84 @@
+/* common body, container, navigation bar, logo, title, modal and footer styles*/
 body{
     background-image:url("./images/body-background.png");
  }
 
-.container{
-    padding:0px;
+.container-fluid{
+    width:97%;
+}
+
+.nav-menu{
+     padding:0;
+     height:55px;    
+}
+
+.menu-item{
+    padding: 0px 25px;
+}
+
+.nav-link{
+    padding:7px 25px;
+    background-color: rgb(255, 199, 94); 
+}
+
+/* applies a different background color to the default MDBootstrap navbar including links*/
+.navbar.navbar-light .navbar-nav .nav-item .nav-link{
+    background-color: rgb(255, 199, 94); 
+    font-weight: 400;
+}
+
+.nav-color{
+    background-color: rgb(255, 199, 94);
+}
+
+.title{
+    font-family: 'Kalam', cursive;
+    font-size: 44px;
+    font-weight: bold;
+    color: darkmagenta;
+    text-align: center;
+}
+
+h1, h5{
+    font-weight: 400;
 }
 
 .logo{
     height:150px;
     width: 200px;
-    margin-left: 40px;   
 }
 
-/* .row{
-    display: flex;
-    justify-content: space-around;
-} */
-
-.menu{
-    height: 60px;   
-}
-
-.ui.menu .item{
-    width: 12%;
-    font-size:18px;
-    background-color: rgb(255, 199, 94);   
-}
-
-.ui.menu, .item{
+footer {
+    width: 100%;
+    color:black;
+    text-align: center;
+    height:75px;
     background-color: rgb(255, 199, 94);
-    /* text-align: center; */
+    padding:10px;
+    font-size: 14px;
 }
 
-.ui.menu{
-    margin-top: 20px;
+.modal-dialog{
+    width:300px;
 }
 
-.ui .button{
-    padding: 13px;
+.modal-header, .modal-btn{
+    background-color:#2bbbad ;
+    /* background-color: #4285f4 ; */  
 }
 
-.orderBtn .order-online{
-    margin: 10px 20px;
-    text-transform: capitalize;
-    height: 40px;
-    font-size:22px;
-    font-family: 'Kalam', cursive;
-    border-radius:50%;   
-}
+/*Home-page styles*/
 
-.orderBtn{
-    background-color: rgb(255, 199, 94);
-}
-
+/* styles and center-aligned the carousel image on home page*/
 .carouselImage{
     display: block;
     margin:2px auto;
     width: 800px;
     height: 460px;
     border-radius: 1%;
-    position: relative;
-    z-index:-1
 }
 
+<<<<<<< HEAD
 footer {
     
     width: 100%;
@@ -102,3 +118,132 @@ width: 100%;
 height: auto;
 
 }
+=======
+/* Menu Page CSS*/
+
+.List-items{
+    margin: auto;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font-size: 30px;
+}
+.menuimage{
+    padding: 5px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.headermenu{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.bakedgoodheader{
+    font-weight: bold;
+}
+.info{
+    font-size: 20px;
+}
+
+.page-links{
+    margin: auto;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;  
+}
+
+.category-links{
+    color: rgb(233, 30, 155);
+    font-weight: 500;
+}
+
+/*Catering styles*/
+
+.catering-content {
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.catering-photo{
+    width: 450px;
+    height: auto;
+} 
+
+.cust-review{
+    border: 2px solid gray;
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+    color: rgb(233, 30, 155);
+    padding: 20px 10px;
+    box-shadow: 5px 10px 8px #888888;
+    border-radius: 1%;
+    text-align: center;
+    margin: 50px 20px 50px 10px;
+    font-weight: 600;
+}
+
+.cust-name{
+    font-size:20px;
+    color: darkmagenta;
+}
+
+.package-list{
+    color: green;
+    list-style-type: square;
+    line-height: 38px;
+}
+
+.package-item-title{
+    font-weight: bold;
+}
+
+.packages-header{
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    color:  darkmagenta;   
+}
+
+.box-price{
+    font-size: 14px;
+}
+
+/* Media screen queries for better responsiveness*/
+@media screen and (max-width: 1030px){
+    .catering-photo{
+        width:425px;
+        height:auto;
+    }
+}
+ 
+@media screen and (max-width: 980px){
+.catering-photo, .cake-photo{
+        width:400px;
+        height:auto;
+    }
+}
+
+@media screen and (max-width: 930px){
+    .catering-photo{
+        width:375px;
+        height:auto;
+    }
+} 
+
+@media screen and (max-width: 875px){
+    .catering-photo, .cake-photo{
+        width:450px;
+        height:auto;
+    }
+}
+
+/* order-online page styles */
+
+.list-group{
+    font-weight: 400;
+}
+
+hr{
+    border-width: 2px;
+}
+>>>>>>> 8a5b0bde12a8c087aae79ce9b2d9c5de2c3d08bc

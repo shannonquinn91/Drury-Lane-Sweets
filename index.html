@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css"/>
+<head>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Drury Lane Sweets</title>
+    <!--custom made favicon-->
+    <link rel="icon" href="./assets/images/favicon.ico">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Google Fonts -->
@@ -11,6 +17,99 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!--External CSS stylesheet-->
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light nav-color nav-menu mb-3">
+      <!-- Navbar brand -->
+      <h1 class="navbar-brand brand identity ml-2">Drury Lane Sweets</h1>
+      <!-- Collapse button -->
+      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent41" aria-controls="navbarSupportedContent41" aria-expanded="false"
+      aria-label="Toggle navigation"><span class="black-text"><i class="fas fa-bars fa-1x"></i></span></button>
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent41">
+      <!--Navigation Links -->
+          <ul class="navbar-nav ml-auto">
+            <!--active page-->
+              <li class="nav-item menu-item active">
+                  <a class="nav-link active" href="#">Home 
+                    <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item menu-item">
+                  <a class="nav-link" href="Menu.html">Menu
+                  </a>
+              </li>
+              <li class="nav-item menu-item ">
+                  <a class="nav-link" href="Catering.html">Catering</a>
+              </li>
+              <li class="nav-item menu-item ">
+                   <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item menu-item ">
+                  <a class="nav-link" href="contactus">Contact Us</a>
+              </li>
+              <li class="nav-item menu-item ">
+                  <a class="nav-link" href="cart.html">Order Online</a>
+              </li>
+              <li class="nav-item menu-item "> 
+                  <a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+              </li> 
+          </ul>
+      <!--Navigation Links -->
+      </div>
+      <!-- Collapsible content -->
+    </nav>
+    <!--header-->
+    <header class="container-fluid">
+      <div class="row">
+          <div class="col-6 col-md-3">
+              <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg">
+          </div>
+          <div class="col-12 col-md-6">
+              <h1 class="mt-4 title">Welcome to Drury Lane Sweets!</h1>
+          </div>
+      </div>
+    </header>
+    <!--Main content-->
+    <main>
+      <!--Image Carousel-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide mb-5" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-10 carouselImage img img-fluid" src="assets/images/cake.jpg" 
+              alt="Chocolate cake image">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-10 carouselImage img img-fluid" src="assets/images/cupcake.jpg" 
+              alt="Chocolate cupcake with strawberry cream topping image">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-10 carouselImage img img-fluid" src="assets/images/cookies.jpg" 
+              alt="Chocolate chip cookies image">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-10 carouselImage img img-fluid" src="assets/images/donuts.jpg" 
+              alt="Variety of flavored donuts image">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-10 carouselImage img img-fluid" src="assets/images/bundt-cake.jpg" 
+              alt="Bundt cake image">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-10 carouselImage img img-fluid" src="assets/images/pastries.jpg" 
+              alt="Variety of pastries image">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--footer-->
+    <footer class="mt-3">
+        <h6><strong>&copy; 2020 Drury Lane Sweets</strong></h6>
+        <p>123 Main Street, Somewhere, New Hampshire</p>
+    </footer>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -19,81 +118,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-    <link rel="stylesheet" href="./assets/style.css">
+    <!--External Javascript file-->
     <script src = "./assets/script.js"> </script> 
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/javascript<ntic.min.js"></script> -->
-    <!-- <script src="http://cdn.jsdelivr.net/jquery.glide/1.0.6/jquery.glide.min.js"></script> -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drury Lane Sweets</title>
-</head>
-<body>
-    <div class = "container-fluid">
-      <div class = "row">
-        <img class= "logo" alt= "Drury Lane Sweets Logo with cupcakes on platter picture" src= "assets/images/logo.jpg"> 
-        <div class="ui stackable container menu">
-          <div class=" header item">
-            Home
-          </div>
-          <a class="item">
-            Menu
-          </a>
-          <a class="item">
-            Catering
-          </a>
-          <a class="item">
-            About Us
-          </a>
-          <a class="item">
-              Contact Us
-          </a>
-          <div class = orderBtn>
-            <button class ="order-online ui green button" type="button">
-                Order Online
-            </button>
-          </div>
-          <div class = "right menu">
-            <a class="item">
-              <i class="fas fa-shopping-cart fa-2x"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-10 carouselImage" src="assets/images/cake.jpg" 
-              alt="Chocolate cake image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/cupcake.jpg" 
-              alt="Chocolate cupcake with strawberry cream topping image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/cookies.jpg" 
-              alt="Chocolate chip cookies image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/donuts.jpg" 
-              alt="Variety of flavored donuts image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/bundt-cake.jpg" 
-              alt="Bundt cake image">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-10 carouselImage" src="assets/images/pastries.jpg" 
-              alt="Variety of pastries image">
-          </div>
-        </div>
-      </div>
-    <footer>
-        <h4>&copy; 2020 Drury Lane Sweets</h4>
-        <p>123 Main Street, Somewhere, New Hampshire</p>
-    </footer>
-</body>
+  </body>
 </html>
