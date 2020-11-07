@@ -1,4 +1,4 @@
-/* common body, container, navigation bar, logo, title, modal and footer styles*/
+/* common styles for body, container, navigation bar, logo, titles, modal and footer*/
 body{
     background-image:url("./images/body-background.png");
  }
@@ -33,10 +33,17 @@ body{
 
 .title{
     font-family: 'Kalam', cursive;
-    font-size: 44px;
+    font-size: 48px;
     font-weight: bold;
     color: darkmagenta;
     text-align: center;
+}
+
+.sub-title{
+    color: rgb(233, 30, 155);
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    font-size: 34px;
 }
 
 h1, h5{
@@ -46,6 +53,8 @@ h1, h5{
 .logo{
     height:150px;
     width: 200px;
+    position: relative;
+    z-index:-1;
 }
 
 footer {
@@ -56,6 +65,7 @@ footer {
     background-color: rgb(255, 199, 94);
     padding:10px;
     font-size: 14px;
+    font-weight: 400;
 }
 
 .modal-dialog{
@@ -63,12 +73,10 @@ footer {
 }
 
 .modal-header, .modal-btn{
-    background-color:#2bbbad ;
-    /* background-color: #4285f4 ; */  
+    background-color: #558fec ;  
 }
 
 /*Home-page styles*/
-
 /* styles and center-aligned the carousel image on home page*/
 .carouselImage{
     display: block;
@@ -79,13 +87,13 @@ footer {
 }
 
 /* Menu Page CSS*/
-
 .List-items{
     margin: auto;
     text-align: center;
     font-family: 'Cabin', sans-serif;
     font-size: 30px;
 }
+
 .menuimage{
     padding: 5px;
     width: 200px;
@@ -117,7 +125,6 @@ footer {
 }
 
 /*Catering styles*/
-
 .catering-content {
     font-family: 'Cabin', sans-serif;
     font-size: 18px;
@@ -196,8 +203,23 @@ footer {
     }
 }
 
-/* order-online page styles */
+/*About-us page styles*/
+.story{
+    line-height: 30px;
+    font-size: 17px;
+}
 
+/* Contact-Us page*/
+#map{
+    width: 400px;
+    height: 300px;
+}
+
+form{
+    background-color: white;
+}
+
+/* order-online page styles */
 .list-group{
     font-weight: 400;
 }
